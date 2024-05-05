@@ -60,12 +60,12 @@ function regKunde() {
     }
 }
 function hentAlleBilletter(){
-    $.post("/hentAlle", function (data){
+    $.get("/hentAlleBilletter", function (data){
         formaterData(data);
     });
 }
 function slettAlleBilletter(){
-    $.get("/hentAlle", function(data){
+    $.get("/slettAlleBilletter", function(data){
         formaterData(data);
     });
 }
